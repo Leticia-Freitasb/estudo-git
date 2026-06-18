@@ -1,12 +1,7 @@
-# Git e GitHub do Zero — Diário de uma Iniciante 🌸
+# Git e GitHub
+💖 Errar é o feitiço; persistir é a magia — Diário de uma Iniciante 🌸
 
-Este é o meu passo a passo de quando aprendi Git e GitHub **começando do absoluto zero**.
-Escrevi do jeito que eu queria ter encontrado quando comecei: com os erros incluídos,
-porque é tropeçando que a gente aprende de verdade.
-
-Se você está começando agora, respira fundo: **todo erro aqui embaixo eu cometi de verdade**.
-Faz parte. Bora.
-
+Pela primeira vez estou subindo um arquivo todo utilizando somente o Linux, esse é o meu aprendizado do zero ao infinito 
 ---
 
 ## Índice
@@ -30,14 +25,12 @@ Antes de tudo, pra não ficar perdida:
 - **GitHub** → um site na nuvem onde você guarda uma cópia dos seus projetos Git.
   É tipo o Google Drive do Git: backup + lugar pra mostrar o que você fez pro mundo.
 - **Repositório (repo)** → a pasta do seu projeto que o Git está vigiando.
-- **Commit** → uma "foto" salva do projeto, com uma mensagem dizendo o que mudou.
-- **Branch** → uma linha de trabalho paralela. Você experimenta nela sem bagunçar a principal.
 
 ---
 
 ## Parte 1 — O `.gitignore`
 
-O `.gitignore` é um arquivo de texto que diz ao Git **o que ele deve IGNORAR**.
+O `.gitignore` é um arquivo de texto que diz ao Git **o que ele deve ignorar**.
 Coisas que não fazem sentido guardar: senhas, arquivos temporários, pastas de
 dependências baixadas, etc.
 
@@ -194,7 +187,7 @@ git branch -d nova-funcionalidade
 
 - `-d` → apaga a branch (só funciona se ela já foi mesclada — é uma trava de segurança boa).
 
-### O ciclo completo (decore isto!)
+### O ciclo completo 
 
 ```bash
 git checkout -b minha-tarefa    # 1. cria e entra na branch
@@ -205,8 +198,6 @@ git checkout master             # 3. volta pra principal
 git merge minha-tarefa          # 4. junta o trabalho
 git branch -d minha-tarefa      # 5. limpa
 ```
-
-Isso é literalmente o que se faz TODO DIA trabalhando com Git.
 
 ---
 
@@ -240,7 +231,7 @@ git push -u origin main
 - `git push -u origin main` → ENVIA seus commits pra nuvem.
   O `-u` cria o vínculo, então das próximas vezes basta `git push`.
 
-### Etapa 3 — Autenticação (o ponto que mais trava!)
+### Etapa 3 — Autenticação 
 
 O GitHub **não aceita mais a senha da conta** no push. Você precisa de um
 **Personal Access Token** (uma senha descartável só pra isso).
@@ -284,11 +275,11 @@ não é burrice — é rito de passagem. 😄
 
 | O que eu fiz de errado | O que aconteceu | A correção |
 |---|---|---|
-| Digitei `mkddir` (dois "d") | `command not found` | É `mkdir`, com um "d" só |
-| Digitei o conteúdo do `.gitignore` no terminal | `command not found` em cada linha | Conteúdo vai DENTRO do arquivo, não no terminal |
-| `git config user .email` (espaço) | `command not found` | É `user.email`, tudo grudado |
-| `"git config...` (aspa solta no começo) | comando se perdeu | A aspa só envolve o VALOR, não o comando todo |
-| `git checkout - b` (espaço no `-b`) | apareceu o texto de ajuda | É `-b` grudado |
+| Digitei `mkddir` (dois "d") | `command not found` | É `mkdir`, com um "d" só (foi um erro de digitação que é algo muito comum) |
+| Digitei o conteúdo do `.gitignore` no terminal | `command not found` em cada linha | Conteúdo vai dentro do arquivo, não no terminal |
+| `git config user .email` (espaço) | `command not found` | É `user.email`, tudo grudado, esses detalhes mudam tudo dentro do linux |
+| `"git config...` (aspa solta no começo) | comando se perdeu | A aspa só envolve o valor, não o comando todo |
+| `git checkout - b` (espaço no `-b`) | apareceu o texto de ajuda | É `-b` grudado (aqui eu posso provar mais um erro de digitação) |
 | Aspa aberta e não fechada | apareceu uma bolinha `•` esperando | `Ctrl+C` pra cancelar e recomeçar |
 | Achei que o terminal travou na senha | a tela não mostrava nada | É proteção; a senha é invisível de propósito |
 
@@ -337,13 +328,4 @@ git config --global --list        # confere a config
 
 ---
 
-## Próximos passos (pra quando eu evoluir)
-
-- **Conflitos de merge** — quando duas branches editam a mesma linha. Parece
-  assustador mas não é bicho de sete cabeças.
-- **`git pull`** — trazer mudanças da nuvem de volta pro computador.
-- **Pull requests** — o jeito "social" de propor mudanças em projetos no GitHub.
-
----
-
-*Escrito por alguém que começou do zero. Se eu consegui, você também consegue. 🌸*
+Se eu consegui, você também consegue. 🌸
