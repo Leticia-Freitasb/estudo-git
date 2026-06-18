@@ -1,6 +1,13 @@
 # Git e GitHub
 💖 Errar é o feitiço; persistir é a magia — Diário de uma Iniciante 🌸
 
+## 📅 Diário de progresso
+
+| Data | O que estudei | Arquivo |
+|------|---------------|---------|
+| 2026-06-17 | Git básico, conflito de merge, Linux e permissões | [ver](docs/2026-06/17-git-linux.md) |
+| 2026-06-18 | .gitignore, fluxo de branches e publicar no GitHub | [ver](docs/2026-06/18-git-github.md) |
+
 Pela primeira vez estou subindo um arquivo todo utilizando somente o Linux, esse é o meu aprendizado do zero ao infinito 
 ---
 
