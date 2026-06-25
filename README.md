@@ -8,7 +8,7 @@
 | 2026-06-17 | Git básico, conflito de merge, Linux e permissões | [ver](docs/2026-06/17-git-linux.md) |
 | 2026-06-18 | .gitignore, fluxo de branches e publicar no GitHub | [ver](docs/2026-06/18-git-github.md) |
 | 2026-06-23 | Linux intermediário: grep, find, pipe, wc, tree, mv e scripts .sh | [ver](docs/2026-06/23-linux-intermediario.md) |
-| `2026-06-25` | Linux: análise de texto — `head`, `tail`, `sort`, `cut`, `uniq` | [📄 ver](docs/2026-06/25-linux-analise-texto.md) |
+| `2026-06-25` | Linux: análise de texto — `head`, `tail`, `sort`, `cut`, `uniq` | [ver](docs/2026-06/25-linux-analise-texto.md) |
 
 🎯 Minha meta
 
